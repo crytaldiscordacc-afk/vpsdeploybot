@@ -12,14 +12,14 @@ from datetime import datetime, timedelta
 
 # ---------------- CONFIG ----------------
 TOKEN = ""
-GUILD_ID = 1432390408184529084
-MAIN_ADMIN_IDS = {1397506807089598474}  # CHANGED: Renamed to MAIN_ADMIN_IDS
+GUILD_ID = 1480120451186294807
+MAIN_ADMIN_IDS = {1480120451186294807}  # CHANGED: Renamed to MAIN_ADMIN_IDS
 SERVER_IP = "207.244.240.48"
 QR_IMAGE = ""
 IMAGE = "jrei/systemd-ubuntu:22.04"
-DEFAULT_RAM_GB = 32
-DEFAULT_CPU = 6
-DEFAULT_DISK_GB = 100
+DEFAULT_RAM_GB = 1
+DEFAULT_CPU = 1
+DEFAULT_DISK_GB = 1
 DATA_DIR = "data"
 USERS_FILE = os.path.join(DATA_DIR, "users.json")
 VPS_FILE = os.path.join(DATA_DIR, "vps_db.json")
@@ -31,14 +31,14 @@ POINTS_RENEW_30 = 8
 VPS_LIFETIME_DAYS = 15
 RENEW_MODE_FILE = os.path.join(DATA_DIR, "renew_mode.json")
 LOG_CHANNEL_ID = None
-OWNER_ID = 1397506807089598474
+OWNER_ID = 1480120451186294807
 
 # Global admin sets
 ADMIN_IDS = set(MAIN_ADMIN_IDS)  # This will contain ALL admins (main + additional)
 
 # Logging
 logging.basicConfig(level=logging.INFO)
-logger = logging.getLogger("ChunkHostBot")
+logger = logging.getLogger("NebulaNodes")
 
 # Ensure data dir
 os.makedirs(DATA_DIR, exist_ok=True)
